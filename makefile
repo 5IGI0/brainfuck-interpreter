@@ -1,4 +1,4 @@
-TARGET_EXEC = a.out
+TARGET_EXEC = ../$(shell $(CC) -dumpmachine).bin
 BUILD_DIR = ./build/$(shell $(CC) -dumpmachine)
 SRC_DIRS = ./src
 

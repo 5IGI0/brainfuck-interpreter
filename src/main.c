@@ -29,6 +29,7 @@ int main(int argc, char const *argv[]) {
     fclose(fcode);
 
     if(!validate(code)) {
+        free(code);
         return EXIT_FAILURE;
     }
 
